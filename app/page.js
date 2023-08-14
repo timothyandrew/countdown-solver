@@ -6,8 +6,9 @@ import { useEffect } from 'react'
 
 export default function Home() {
   useEffect(() => {
-    let result = Solve([75, 100, 6, 1, 4, 2], 982);
-    console.log("RESULT", Format(result));
+    let results = Solve([75, 100, 6, 1, 4, 2], 982);
+    console.log("RESULTS");
+    results.forEach(r => console.info(Format(r)));
   }, []);
 
   return (
